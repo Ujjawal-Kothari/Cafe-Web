@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="Ani-nav.css">
+</head>
+<body>
+    <header>
+        <div class="innerwidth">
+            <h1>Kothari's Kitchen</h1>
+        <div class="menu-icon">
+            <i class="fas fa=-bars"></i>
+        </div>
+    </div>
+    </header>
+        <div class="navigation-menu">
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">OrderOnline</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </nav>
+        </div>
+
+        <script>
+            $(".menuicon").click(function() {
+                $(this).toggleClass("active");
+                $(".navigation-menu").toggleClass("active");
+                $(".menu-icon i").toggleClass("fa-times");
+            })
+        </script>
+</body>
+</html>

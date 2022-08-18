@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kothari's Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        /* BgColor */
+        body{
+            background-color: rgb(75, 75, 100);
+        }
+        /* Navigation Menu */
+        .navBar {
+            background-color: rgb(43, 43, 92);
+           border-radius: 5px ;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .navBar ul{
+            overflow: auto;
+        }
+        .navBar li{
+            
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            
+        }
+        .navBar li a{
+            padding: 3px 3px;
+         text-decoration: none;
+         color: aliceblue;
+        }
+        .navBar li a:hover{
+            color: rgb(43, 43, 92);
+            background-color: aliceblue;
+            /* border: 2px solid black; */
+            border-radius: 2px;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 13px 19px;
+            margin-top: 10px;
+            
+            width: auto;
+        }
+        .Title{
+            color: rgb(145, 127, 26);
+            font-family: 'Playfair Display';
+            font-size: 30px;
+            font-weight:bold ;
+            padding: 10px;
+        }
+        /* Logo image */
+        .img{
+            float: right;
+            border-radius: 5px;
+        }
+        /* headings */
+        h1{
+            color: aliceblue;
+            text-align: center;
+
+        }
+  
+       /* h3{
+            color: aliceblue;
+        } */
+        .Menu{
+            color: aliceblue;
+            font-family: Georgia;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu-->
+    <header>
+        <nav class="navBar">
+            <ul>
+                <a href="CafeWeb.html"><li class="Title">Kothari's Kitchen</li> </a>
+                <li> <a href="CafeWeb.html"> Home </a></li>
+                <li> <a href="CafeMenu.html"> Menu </a></li>
+                <li> <a href="OrderOnline.html"> Order Online </a></li>
+                <li> <a href="CafeLoginForm.html" target="_blank"> Sign in/Login </a></li>
+                <li> <a href="CafeAbout.html"> About Us </a></li>
+                <li> <a href="ContactUs.html"> Contact Us </a></li>
+            
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search" >
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- Heading -->
+    <h1>
+        Menu
+    </h1>
+    <hr>
+<div class="Menu">
+    <h3>> Everything for your Thrist</h3>
+    <ul type="circle">
+<li>Mojito</li>
+      <ol type="i">
+        <li>Fresh Lime Mojito</li>
+        <li>BerrySangam Mojito</li>
+        <li>LosAngeles Mojito</li>
+        <li>Bluelagoon Mojito</li>
+        <li>Drive Through Beach Mojito</li>
+      </ol>
+<li>Hot as Hell</li>
+      <ol type="i">
+        <li>Tea</li>
+        <li>Masaka Tea</li>
+        <li>Green tea</li>
+        <li>Hot Chocolate</li>
+      </ol>
+<li>Caffein Rush</li>
+<ol type="i">
+    <li>Latte</li>
+    <li>Mocha</li>
+    <li>Cappuccino</li>
+    <li>Iced Latte</li>
+    <li>Standard Frappe</li>
+    <li>Caremel Frappe</li>
+    <li>Cold Coffee</li>
+</ol>    
+</ul>
+</div>
+</body>
+
+</html>

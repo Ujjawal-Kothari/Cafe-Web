@@ -1,0 +1,72 @@
+/* BgColor */
+body {
+    margin:0vw;
+    background-color: rgb(75, 75, 100);
+}
+
+/* Navigation Menu */
+.navBar {
+    display: flexbox;
+    overflow: hidden;
+    /* height: 50vw; */
+    max-width: 100%vw;
+    background-color: rgb(43, 43, 92);
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+    font-family: Lobster;
+    font-size: 20px;
+    
+}
+
+.navBar ul {
+    height: 100%;
+    margin-top: 0%;
+    display: flex;
+    overflow: auto;
+    
+}
+
+.navBar li {
+
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+    text-align: center;
+
+}
+
+.navBar li a {
+    display: block;
+    padding: 3px 3px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navBar li a:hover {
+    color: rgb(43, 43, 92);
+    background-color: aliceblue;
+    /* border: 2px solid black; */
+    border-radius: 2px;
+}
+
+.search {
+    
+    float: right;
+    color: white;
+    padding: 13px 19px;
+    margin-top: 10px;
+
+    width: auto;
+}
+
+.Title {
+    color: rgb(145, 127, 26);
+    /* font-family: 'Playfair Display'; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight:bold;
+    padding: 10px;
+}
+
+
+

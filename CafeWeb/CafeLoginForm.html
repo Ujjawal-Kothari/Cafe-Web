@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <style>
+            /* BgColor */
+            body{
+                background-color: rgb(75, 75, 100);
+            }
+            /* Navigation Bar */
+            .navBar {
+            background-color: rgb(43, 43, 92);
+           border-radius: 5px ;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .navBar ul{
+            overflow: auto;
+        }
+        .navBar li{
+            
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            
+        }
+        .navBar li a{
+            padding: 3px 3px;
+         text-decoration: none;
+         color: aliceblue;
+        }
+        .navBar li a:hover{
+            color: rgb(43, 43, 92);
+            background-color: aliceblue;
+            /* border: 2px solid black; */
+            border-radius: 2px;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 13px 19px;
+            margin-top: 10px;
+            
+            width: auto;
+        }
+        .Title{
+            color: rgb(145, 127, 26);
+            font-family: 'Playfair Display';
+            font-size: 30px;
+            font-weight:bold ;
+            padding: 10px;
+        }
+          /* Heading */
+        h1{
+            
+            color: aliceblue;
+            text-align: center;
+        }
+        /* Changing Attributes of form */
+        .container{ 
+
+            font-size: larger;
+            color: aliceblue;
+            display: inline-block;
+            
+        }
+        /* Logo Image */
+        img{
+            float: right;
+            position: sticky;
+        }
+        /* Making Logo Image turn blurry when hovered through */
+        .img a:hover{
+            backdrop-filter: blur(10px);
+      filter: blur(1px);
+      transition: 0.5s ease;
+        }
+     </style>
+</head>
+<body>
+    <!-- Navagation Menu -->
+    <header>
+        <nav class="navBar">
+            <ul>
+                <a href="CafeWeb.html"><li class="Title">Kothari's Kitchen</li> </a>
+                <li> <a href="CafeWeb.html"> Home </a></li>
+                <li> <a href="CafeMenu.html"> Menu </a></li>
+                <li> <a href="OrderOnline.html"> Order Online </a></li>
+                <li> <a href="CafeLoginForm.html" target="_blank"> Sign in/Login </a></li>
+                <li> <a href="CafeAbout.html"> About Us </a></li>
+                <li> <a href="ContactUs.html"> Contact Us </a></li>
+            
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search" >
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- Login page -->
+<span> <h1>Login</h1>  </span> 
+<!-- Login Form -->
+<form action="backend.php">
+<div class="container">
+    <div >
+<label for="1">NAME</label>
+<input type="text" name="myName" id="1">
+</div>
+<br>
+
+<div>
+    <label  for="2">Contact</label>
+    <input type="tel" name="myContact" id="2">
+    </div>
+    <br>
+
+    <div>
+        <label for="3">Email</label>
+        <input type="email" name="myEmail" id="3">
+        </div>
+        <br>
+
+    <div>
+        <label for="4">City</label>
+        <select name="myCity" id="4">
+            <option value="DL">Delhi</option>
+            <option value="MH">Mumbai</option>
+            <option value="RJ">Jaipur</option>
+            <option value="WB">Kolkata</option>
+            <option value="KN">Banglore</option>
+        </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="5">Gender</label>
+            Male :<input type="radio" name="myGender" id="5">
+            Female :<input type="radio" name="myGender"id="5">
+            Other :<input type="radio" name="myGender"id="5">
+            </div>
+            <br>
+
+            <div>
+                <label for="6">DOB</label>
+                <input type="date" name="myDOB" id="6">
+                </div>
+                <br>
+                <div>
+                    <strong> Are You 18+ </strong> : <input type="checkbox" name="myEligiblity">
+                    </div>
+                    <br>
+
+                    <div>
+                        <!--Submit & Reset Buttons-->
+                         <input type="submit" value="Submit" >
+                         <input type="reset" value="Reset Form">
+                        </div>
+                        <br> 
+                    </div>
+                    </form> 
+                    <div class="img">
+                   <a id="1" href="CafeWeb.html"> <img src="Logo image.jpg" alt="Logo">
+                   </a>
+                </div>
+</body>
+</html>
